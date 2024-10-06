@@ -1,7 +1,7 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="{{ route('home.home') }}">
                 <i class="mdi mdi-grid-large menu-icon"></i>
                 <span class="menu-title">Dashboard</span>
             </a>
@@ -32,13 +32,13 @@
             <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
                     <li class="nav-item"> <a class="nav-link"
-                            href="">Quản lý xe khách</a></li>
+                            href="{{ route('car.car') }}">Quản lý xe khách</a></li>
                     <li class="nav-item"> <a class="nav-link"
-                            href="">Quản lý tuyến đường</a></li>
+                            href="{{ route('carRoute.carRoute') }}">Quản lý tuyến đường</a></li>
                     <li class="nav-item"> <a class="nav-link"
-                            href="">Quản lý lịch trình</a></li>
+                            href="{{ route('schedule.schedule') }}">Quản lý lịch trình</a></li>
                     <li class="nav-item"> <a class="nav-link"
-                            href="">Quản lý thông báo</a></li>
+                            href="{{ route('notification.notification') }}">Quản lý thông báo</a></li>
                     <li class="nav-item"> <a class="nav-link"
                             href="">Quản lý khuyến mãi & ưu đãi</a></li>
                 </ul>
@@ -46,21 +46,21 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="">
+            <a class="nav-link" href="{{ route('sendingEmail.sendingEmail') }}">
                 <i class="menu-icon mdi mdi mdi-email"></i>
                 <span class="menu-title">Gửi email</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="">
+            <a class="nav-link" href="{{ route('account.account') }}">
                 <i class="menu-icon mdi mdi mdi-account"></i>
                 <span class="menu-title">Tài khoản</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="">
+            <a class="nav-link" href="{{ route('setting.setting') }}">
                 <i class="menu-icon mdi mdi mdi-application-settings"></i>
                 <span class="menu-title">Cài đặt</span>
             </a>
